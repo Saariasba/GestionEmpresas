@@ -29,9 +29,6 @@ class AddBirdActivity : AppCompatActivity() {
     private val dniBird by lazy<EditText> { findViewById(R.id.dni_bird) }
     private val state by lazy<EditText> { findViewById(R.id.state) }
     private val gender by lazy<EditText> { findViewById(R.id.gender) }
-    private val sons by lazy<EditText> { findViewById(R.id.sons) }
-    private val parents by lazy<EditText> { findViewById(R.id.parents) }
-    private val cageId by lazy<EditText> { findViewById(R.id.cage_id) }
 
     lateinit var animationScale: Animation
     private val compositeDisposable = CompositeDisposable()

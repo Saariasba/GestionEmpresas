@@ -27,12 +27,13 @@ class MyBirds : AppCompatActivity() {
     lateinit var animationScale: Animation
     private val compositeDisposable = CompositeDisposable()
     private var empresaDatabase: EmpresaDataBase? = null
+    private var list = mutableListOf<Empresa>()
 
     private val adapterController by lazy {
         EmpresasAdapterController(
             object : MyBirdsListener {
                 override fun goToBird(topic: Empresa) {
-
+                    deleteBirds(topic)
                 }
             },
             this
@@ -72,7 +73,19 @@ class MyBirds : AppCompatActivity() {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe {
                 it?.let {
+                    list = it as MutableList<Empresa>
                     adapterController.setData(it)
+                }
+            })
+    }
+
+    private fun deleteBirds(topic: Empresa) {
+        compositeDisposable.add(Observable.fromCallable { empresaDatabase?.birdsDao()?.delete(topic) }
+            .subscribeOn(Schedulers.computation())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                it?.let {
+                   getBirds()
                 }
             })
     }

@@ -41,7 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="@string/new_bird"
+                    android:text="Nueva Empresa"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@id/my_birds_image"
@@ -62,7 +62,7 @@
 
             <TextView
                 android:id="@+id/id_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:text="Id: "
@@ -86,7 +86,7 @@
 
             <TextView
                 android:id="@+id/name_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:text="Nombre: "
@@ -103,17 +103,17 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="name"
+                android:hint="Nombre"
                 android:inputType="text"
                 app:layout_constraintStart_toEndOf="@id/name_text"
                 app:layout_constraintTop_toBottomOf="@+id/id" />
 
             <TextView
                 android:id="@+id/image_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:text="Imagen: "
+                android:text="Url: "
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/image"
@@ -127,17 +127,17 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="image"
+                android:hint="Url"
                 android:inputType="text"
                 app:layout_constraintStart_toEndOf="@id/image_text"
                 app:layout_constraintTop_toBottomOf="@+id/name" />
 
             <TextView
                 android:id="@+id/specie_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:text="Especie: "
+                android:text="Telefono: "
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/specie"
@@ -151,17 +151,17 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="specie"
+                android:hint="Telefono"
                 android:inputType="text"
                 app:layout_constraintStart_toEndOf="@id/image_text"
                 app:layout_constraintTop_toBottomOf="@+id/image" />
 
             <TextView
                 android:id="@+id/dni_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:text="DNI: "
+                android:text="Email: "
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/dni_bird"
@@ -175,17 +175,17 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="dni_bird"
+                android:hint="Email"
                 android:inputType="text"
                 app:layout_constraintStart_toEndOf="@id/image_text"
                 app:layout_constraintTop_toBottomOf="@+id/specie" />
 
             <TextView
                 android:id="@+id/state_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:text="Estado: "
+                android:text="Servicios: "
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/state"
@@ -199,17 +199,17 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="state"
+                android:hint="Servicios"
                 android:inputType="text"
                 app:layout_constraintStart_toEndOf="@id/image_text"
                 app:layout_constraintTop_toBottomOf="@+id/dni_bird" />
 
             <TextView
                 android:id="@+id/gender_text"
-                android:layout_width="80dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:text="Genero: "
+                android:text="Clasificación: "
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/gender"
@@ -223,82 +223,10 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
                 android:ems="10"
-                android:hint="gender"
+                android:hint="Clasificación"
                 android:inputType="text"
                 app:layout_constraintStart_toEndOf="@id/image_text"
                 app:layout_constraintTop_toBottomOf="@+id/state" />
-
-            <TextView
-                android:id="@+id/sons_text"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="Hijos: "
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@id/sons"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/sons" />
-
-            <EditText
-                android:id="@+id/sons"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:ems="10"
-                android:hint="sons"
-                android:inputType="text"
-                app:layout_constraintStart_toEndOf="@id/image_text"
-                app:layout_constraintTop_toBottomOf="@+id/gender" />
-
-            <TextView
-                android:id="@+id/parents_text"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="Padres: "
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@id/parents"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/parents" />
-
-            <EditText
-                android:id="@+id/parents"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:ems="10"
-                android:hint="parents"
-                android:inputType="text"
-                app:layout_constraintStart_toEndOf="@id/image_text"
-                app:layout_constraintTop_toBottomOf="@+id/sons" />
-
-            <TextView
-                android:id="@+id/cage_text"
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="Jaula: "
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@id/cage_id"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/cage_id" />
-
-            <EditText
-                android:id="@+id/cage_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:ems="10"
-                android:hint="cage_id"
-                android:inputType="text"
-                app:layout_constraintStart_toEndOf="@id/image_text"
-                app:layout_constraintTop_toBottomOf="@+id/parents" />
 
             <ImageView
                 android:id="@+id/save"
@@ -307,7 +235,7 @@
                 android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cage_id"
+                app:layout_constraintTop_toBottomOf="@id/gender"
                 app:srcCompat="@drawable/save" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

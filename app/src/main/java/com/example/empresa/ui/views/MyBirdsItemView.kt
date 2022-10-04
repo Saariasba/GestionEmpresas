@@ -25,8 +25,6 @@ class MyBirdsItemView @JvmOverloads constructor(
     private val id by lazy<TextView> { findViewById(R.id.id) }
     private val name by lazy<TextView> { findViewById(R.id.name) }
     private val dni by lazy<TextView> { findViewById(R.id.dni) }
-    private val cage by lazy<TextView> { findViewById(R.id.cage) }
-    private val gender by lazy<ImageView> { findViewById(R.id.gender) }
     private val state by lazy<TextView> { findViewById(R.id.state) }
     private val container by lazy<ConstraintLayout> { findViewById(R.id.container) }
 
@@ -43,6 +41,7 @@ class MyBirdsItemView @JvmOverloads constructor(
 
     private fun listeners() {
         container.setOnClickListener {
+            listener?.goToBird(data)
             it.startAnimation(animationScale)
         }
     }
@@ -63,14 +62,5 @@ class MyBirdsItemView @JvmOverloads constructor(
         name.text = data.name
         dni.text = data.dni_bird
         state.text = data.state
-        if (data.gender == male) {
-            gender.setImageDrawable(resources.getDrawable(R.drawable.male))
-        } else {
-            gender.setImageDrawable(resources.getDrawable(R.drawable.female))
-        }
-    }
-
-    companion object {
-        const val male = "Male"
     }
 }

@@ -17,14 +17,6 @@ import io.reactivex.schedulers.Schedulers
 class MainActivity : AppCompatActivity() {
 
     private val myBirds by lazy<ConstraintLayout> { findViewById(R.id.layout_one) }
-    private val breedingPairs by lazy<ConstraintLayout> { findViewById(R.id.layout_two) }
-    private val familyTree by lazy<ConstraintLayout> { findViewById(R.id.layout_three) }
-    private val cages by lazy<ConstraintLayout> { findViewById(R.id.layout_four) }
-    private val photoGallery by lazy<ConstraintLayout> { findViewById(R.id.layout_five) }
-    private val chicksToRing by lazy<ConstraintLayout> { findViewById(R.id.layout_six) }
-    private val incubation by lazy<ConstraintLayout> { findViewById(R.id.layout_seven) }
-    private val settings by lazy<ConstraintLayout> { findViewById(R.id.layout_eight) }
-    private val information by lazy<ConstraintLayout> { findViewById(R.id.layout_nine) }
 
     lateinit var animationScale: Animation
 
@@ -122,30 +114,6 @@ class MainActivity : AppCompatActivity() {
             it.startAnimation(animationScale)
             val intent = Intent(applicationContext, MyBirds::class.java)
             startActivity(intent)
-        }
-        breedingPairs.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        familyTree.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        cages.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        photoGallery.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        chicksToRing.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        incubation.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        settings.setOnClickListener {
-            it.startAnimation(animationScale)
-        }
-        information.setOnClickListener {
-            it.startAnimation(animationScale)
         }
     }
 }
