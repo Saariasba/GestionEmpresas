@@ -1,4 +1,4 @@
-package com.example.gestionempresas
+package com.example.empresa
 
 import org.junit.Test
 

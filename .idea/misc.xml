@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/drawable-v24/background_gray.xml" value="0.2305" />
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/drawable/background_black.xml" value="0.2305" />
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/drawable/background_gray.xml" value="0.2535" />
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/layout/activity_add_bird.xml" value="0.3428442028985507" />
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/layout/activity_main.xml" value="0.30978260869565216" />
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/layout/activity_my_birds.xml" value="0.4384057971014493" />
+        <entry key="..\:/Users/santi/Desktop/Aviario/app/src/main/res/layout/my_bird_list_item.xml" value="0.4384057971014493" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

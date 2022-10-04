@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">GestionEmpresas</string>
+    <string name="app_name">Aviario</string>
+    <string name="my_birds">Mis Pájaros</string>
+    <string name="breeding_pairs">Parejas Reproductoras</string>
+    <string name="family_tree">Árbol Genealógico</string>
+    <string name="cages">Jaulas</string>
+    <string name="photo_gallery">Galeria De Fotos</string>
+    <string name="chicks_to_ring">Pollitos Para Anillar</string>
+    <string name="incubation">Incubación</string>
+    <string name="settings">Configuración</string>
+    <string name="information">Información De La Aplicación</string>
+    <string name="new_bird">Nuevo Pájaro</string>
 </resources>
