@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Aviario</string>
+    <string name="app_name">GestionEmpresa</string>
     <string name="my_birds">Mis Pájaros</string>
     <string name="breeding_pairs">Parejas Reproductoras</string>
     <string name="family_tree">Árbol Genealógico</string>
